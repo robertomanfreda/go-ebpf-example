@@ -28,7 +28,7 @@ and maps from Go code.
 ├── bpf/                 # eBPF C code (XDP program)
 ├── gen/                 # Auto-generated Go bindings and object files
 ├── build/               # Compiled binary output
-├── main.go              # Entry point for Go app
+├── cmd/                 # Entry point for Go application (main.go)
 ├── gen.go               # go:generate directive to build eBPF code
 ├── Makefile             # Commands for build, run, and generate
 ├── go.mod/sum           # Go dependencies

@@ -8,7 +8,7 @@ generate:
 
 build: generate
 	@mkdir -p build
-	go build -o build/$(BINARY) .
+	go build -o build/$(BINARY) ./cmd
 
 run: build
 	sudo ./build/$(BINARY)
