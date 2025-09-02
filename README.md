@@ -26,8 +26,8 @@ and maps from Go code.
 ```
 .
 ├── bpf/                 # eBPF C code (XDP program)
-├── gen/                 # Auto-generated Go bindings and object files
-├── build/               # Compiled binary output
+├── gen/                 # Auto-generated Go bindings, object files (available after `make`) and wrapper
+├── build/               # Compiled binary output (available after `make`)
 ├── cmd/                 # Entry point for Go application (main.go)
 ├── gen.go               # go:generate directive to build eBPF code
 ├── Makefile             # Commands for build, run, and generate
@@ -99,6 +99,7 @@ To use a different network interface, modify this line in `main.go`:
 
 ```go
 c, err := gen.Start("enp3s0")
+
 ```
 
 ---
