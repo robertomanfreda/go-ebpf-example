@@ -60,19 +60,19 @@ cd go-ebpf-example
 make generate
 ```
 
-### 2. Build
+### 3. Build
 
 ```bash
 make build
 ```
 
-### 3. Execute
+### 4. Execute
 
 ```bash
 make run
 ```
 
-### 4. All in one
+### 5. All in one
 
 ```bash
 make
