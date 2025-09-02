@@ -32,7 +32,6 @@ and maps from Go code.
 ├── gen.go               # go:generate directive to build eBPF code
 ├── Makefile             # Commands for build, run, and generate
 ├── go.mod/sum           # Go dependencies
-├── README.md            # This file
 ```
 
 ---
