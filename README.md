@@ -114,4 +114,4 @@ c, err := gen.Start("enp3s0")
 
 ## 📄 License
 
-This project is licensed under **Dual MIT/GPL**.
+This project is licensed under **MIT License**.
