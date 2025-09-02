@@ -54,7 +54,25 @@ git clone https://github.com/robertomanfreda/go-ebpf-example
 cd go-ebpf-example
 ```
 
-### 2. Generate, build and execute
+### 2. Generate
+
+```bash
+make generate
+```
+
+### 2. Build
+
+```bash
+make build
+```
+
+### 3. Execute
+
+```bash
+make run
+```
+
+### 4. All in one
 
 ```bash
 make
@@ -101,6 +119,21 @@ To use a different network interface, modify this line in `main.go`:
 c, err := gen.Start("enp3s0")
 
 ```
+
+--- 
+
+## 🗒️ Notes
+
+As reported on [ebpf-go.dev](https://ebpf-go.dev/guides/getting-started/#whats-next)
+
+1. Use clang --version to check which version of LLVM you have installed. Refer to your distribution's package index to
+   finding the right packages to install, as this tends to vary wildly across distributions. Some distributions ship
+   clang
+   and llvm-strip in separate packages.
+2. For Debian/Ubuntu, you'll typically need libbpf-dev. On Fedora, it's libbpf-devel.
+3. On AMD64 Debian/Ubuntu, install linux-headers-amd64. On Fedora, install kernel-devel.
+   On Debian, you may also need ln -sf /usr/include/asm-generic/ /usr/include/asm since the example expects to find <
+   asm/types.h>.
 
 ---
 
